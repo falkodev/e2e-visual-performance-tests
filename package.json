@@ -1,0 +1,45 @@
+{
+  "name": "js-front",
+  "version": "1.0.0",
+  "description": "Frontend repository for E2E and visual tests",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "cypress open"
+  },
+  "private": true,
+  "author": {
+    "name": "Anthony Tarlao",
+    "url": "https://github.com/falkodev"
+  },
+  "dependencies": {
+    "express": "4.16.2",
+    "express-jwt": "5.3.1",
+    "express-session": "1.15.6",
+    "hbs": "4.0.1",
+    "minimist": "1.2.0",
+    "morgan": "1.9.1"
+  },
+  "devDependencies": {
+    "@cypress/browserify-preprocessor": "2.1.1",
+    "@cypress/snapshot": "2.1.3",
+    "@cypress/webpack-preprocessor": "4.1.0",
+    "autocannon": "^4.0.0",
+    "backstopjs": "^4.1.9",
+    "cypress": "3.3.2",
+    "cypress-axe": "0.5.1",
+    "cypress-failed-log": "2.5.1",
+    "cypress-pipe": "1.4.0",
+    "cypress-plugin-snapshots": "1.2.6",
+    "cypress-select-tests": "1.3.0",
+    "nodemon": "1.18.11",
+    "prettier": "^1.18.2"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "trailingComma": "all",
+    "singleQuote": true
+  }
+}

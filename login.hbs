@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logging In - HTML Web Form - Login</title>
+  <style type="text/css">
+    body {
+      padding: 0 10px;
+    }
+
+    #form-wrapper {
+      padding: 10px 20px;
+      background-color: #eee;
+    }
+
+    #form-wrapper ul {
+      list-style-type: none;
+    }
+
+    #form-wrapper li {
+      margin: 10px 0;
+    }
+
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="form-wrapper">
+    <form method="POST" action="/login">
+      <ul>
+        <li>
+          <label>
+            Username:
+            <input name="username" />
+          </label>
+        </li>
+        <li>
+          <label>
+            Password:
+            <input name="password" type="password" />
+          </label>
+        </li>
+        <li>
+          <button type="submit">Submit</button>
+        </li>
+      </ul>
+    </form>
+    {{#if error}}
+      <p class="error">{{error}}</p>
+    {{/if}}
+  </div>
+</body>
+</html>
